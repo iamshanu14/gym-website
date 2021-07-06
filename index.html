@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shanu's Gym</title>
+    <!-- <link rel="stylesheet" href="/css/style.css"/> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    />
+  </head>
+  <style>
+    body {
+  color: white;
+  background: url("/img/bg.jpg");
+  height: 33cm;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Baloo Bhaina 2", cursive;
+}
+.left img {
+  display: inline-block;
+  filter: invert(100%);
+  width: 30px;
+  padding: 4px 80px;
+}
+.left div {
+  font-size: 20px;
+  text-align: center;
+  line-height: 0px;
+}
+.left {
+  display: inline-block;
+  color: white;
+  /* border: 2px solid red; */
+  position: absolute;
+  top: 11px;
+  left: 13px;
+}
+.mid {
+  color: white;
+  /* border: 2px solid rgb(0, 38, 255); */
+  display: block;
+  margin: -12px auto;
+  width: 46%;
+}
+.right {
+  display: inline-block;
+  color: white;
+  /* border: 2px solid rgb(0, 255, 13); */
+  position: absolute;
+  top: 20px;
+  right: 34px;
+}
+.btn {
+  margin: 27px 18px;
+  background-color: black;
+  color: white;
+  padding: 1px 11px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.btn:hover {
+  background-color: rgb(71, 69, 69);
+}
+.navbar {
+  display: inline-block;
+}
+.navbar li {
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+  padding: 2px 2px;
+  margin: auto;
+}
+.navbar li a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 5px 18px;
+}
+.navbar li a:hover,
+.navbar li a.active {
+  text-decoration: underline;
+  color: gray;
+}
+.container {
+  border: 2px solid #f7f5f5;
+  margin: 120px 31px;
+  padding: 75px 75px;
+  width: 33%;
+  border-radius: 10px;
+}
+.container h1 {
+  font-size: 27px;
+}
+.form-group input {
+  font-family: "Baloo Bhaina 2", cursive;
+  text-align: center;
+  display: block;
+  width: 401px;
+  padding: 0px;
+  border: 2px solid black;
+  margin: 13px auto;
+  font-size: 25px;
+  border-radius: 8px;
+}
+.container button{
+  display: block;
+  width: 35%;
+  margin: 19px auto;
+  padding: 10px 6px;
+}
+
+  </style>
+  <body>
+    <header class="header">
+      <div class="left">
+        <img src="/img/logo.png" alt="" />
+        <div>Shanu's Fitness</div>
+      </div>
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Calorie calculator</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <button class="btn">Call us now</button>
+        <button class="btn">Email us</button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Join the best Gym in Mumbai now!!!</h1>
+      <form action="backend.php">
+        <div class="form-group">
+          <div>
+            <input type="text" name="name" placeholder="Enter your Name" />
+          </div>
+          <div>
+            <input type="text" name="age" placeholder="Enter your Age" />
+          </div>
+          <div>
+            <input type="text" name="gender" placeholder="Enter your Gender" />
+          </div>
+          <div>
+            <input type="text" name="area" placeholder="Enter your Locality" />
+          </div>
+          <div>
+            <button class="btn">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
